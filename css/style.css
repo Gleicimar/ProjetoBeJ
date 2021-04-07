@@ -551,3 +551,9 @@ font-size: 11px;
 bottom: 10px;
 }
 }
+section.produtos{
+ background-color: #2578;
+ max-height: 200px;
+max-width: 100%;
+display: grid;
+}
