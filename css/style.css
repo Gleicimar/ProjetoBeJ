@@ -3,7 +3,7 @@
   padding: 0;
 
 }
-/*Cabeçalho*/
+
 header{
 grid-area:h;
 }
@@ -13,12 +13,11 @@ grid-area:h;
   padding: 0;
 grid-template-areas:"h h h"
                     "s s s"
-                    "f f f"
-
+                    "f f f";
 }
 
-.container--logo >img {
-  width: 100%;
+.container--logo img {
+  width: 50%;
   height:30%;
   position:relative;
 }
