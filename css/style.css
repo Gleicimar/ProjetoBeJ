@@ -1,8 +1,7 @@
 * {
   margin: 0 auto;
   padding: 0;
-background-image: url(../images/plano-de-fundo.png);
-}
+background-image: url(../images/plano-de-fundo.png);}
 
 header{
 grid-area:h;
@@ -18,7 +17,7 @@ height: 150px;
 grid-template-areas:"h h h"
                     "s s s"
                     "f f f"
-                    "p p p";
+                   ;
 }
 header .navbar{
 width:100%;
@@ -548,6 +547,13 @@ footer{
 }
 
 @media (max-width: 320px){
+  .navbar ul {
+    height: 150px;
+    background-color: rgb(255, 153, 204);
+    left: 235px;
+    width: 50%;
+   top:0;
+}
 
   .img-slider .slide img {
     z-index: 1;
@@ -594,9 +600,14 @@ padding:0;
 margin:0;
 }
 footer{
-  width:100%;
+ max-width:100%;
 }
-
+footer.rodape{
+  display: block;
+  width: 100%;
+ /* margin-bottom: 40px;*/
+  text-align: center;
+}
 }
 .produtos-flex {
   display: flex;
