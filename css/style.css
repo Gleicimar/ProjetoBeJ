@@ -88,7 +88,7 @@ a:hover {
 
 .nav-links a {
   /*Mudando a cor dos itens*/
-  color: rgb(164 51 115);
+  color: rgba (250,140,75);
   /*Mudando o espaçamento das letras dos itens*/
   text-decoration: none;
   letter-spacing: 3px;
