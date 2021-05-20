@@ -22,13 +22,25 @@
   cursor: pointer;
 font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-
+html,body{
+overflow-x: clip;
+  height:100%;
+}
+.center{
+  margin:0 auto;
+}
+a,*{
+text-decoration: none;
+}
 li a:hover {
  /* text-decoration: none;*/
   color: rgba(240, 49, 144, 0.719);
 }
 
 header {
+
+padding-bottom: 40px;
+left:150px;
   grid-area: h;
   display: flex;
   width: 100%;
@@ -318,11 +330,11 @@ footer {
   grid: f;
   bottom: 0;
   width: 100%;
-  height: 45px;
+  height: 150px;
   padding: 20px;
   text-align: center;
   clear: both;
-  background-color: burlywood;
+background-color: rgba(226, 88, 88,0.5);
 }
 
 @media (max-width: 480px) {
@@ -331,7 +343,13 @@ footer {
     background-color: rgb(255, 153, 204);
     margin-right: 200px;
   }
-
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   footer.rodape {
     display: block;
     width: 100%;
@@ -339,7 +357,7 @@ footer {
     text-align: center;
   }
 
-  .footer.rodape {
+  footer.rodape {
     margin-left: 0;
   }
 
@@ -352,6 +370,13 @@ footer {
     margin-right: 200px;
     float:left;
   }
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   .navbar ul {
     height: auto;
     background-color: rgb(255, 153, 204);
@@ -444,7 +469,7 @@ footer {
   height: 12px;
   margin: 10px;
   border-radius: 50%;
-  cursor: url(../images/pincel.cur);
+  cursor: pointer;
 }
 
 .img-slider .navigation .btn.active {
@@ -491,7 +516,13 @@ footer {
     margin: 0 auto;
     padding: 0;
   }
-
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   footer {
     max-block-size: 100%;
     ;
@@ -506,7 +537,13 @@ footer {
     margin: 0 auto;
     padding: 0;
   }
-
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   .logo img {
     width: 210px;
     height: 175px;
@@ -515,7 +552,7 @@ footer {
 
   footer {
     max-width: 100%;
-    ;
+
   }
 }
 
@@ -570,7 +607,13 @@ footer {
     width: 100%;
     height: 250px;
   }
-
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   .img-slider .slide .info {
     padding: 10px 20px;
   }
@@ -597,7 +640,7 @@ footer {
 
   footer {
     max-width: 100%;
-    ;
+
   }
 }
 
@@ -609,7 +652,13 @@ footer {
   max-width: 100%;
   margin: 0 auto;
 }
-
+.pag {
+  border-radius: 10px 70px;
+  width: 100px;
+  background-color: darksalmon;
+  color: deeppink;
+  margin-top: 10px;
+}
 .produtos-flex .produto>div {
   flex: 1 1 200px;
   margin: 10px;
@@ -801,7 +850,7 @@ Collection
 }
 
 .collection__container {
-  width: 100%;
+  width: 80%;
   padding: 0 1.6rem;
   display: flex;
   height: 100%;
@@ -829,11 +878,11 @@ Collection
 }
 
 .collection__box img.collection_01 {
-  width: 60%;
+  width: 50%;
 }
 
 .collection__box img.collection_02 {
-  width: 75%;
+  width: 50%;
 }
 
 .collection__content {
@@ -929,7 +978,9 @@ Collection Media Query
 .produtos {
   display: inline-flex;
   background-image:url(../images/makes.png);
-  background-image: no-repeat;
+background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .produto .img-produtos {
@@ -950,7 +1001,17 @@ p {
   color: #0c0303;
   font-weight:bolder;
 }
-
+.pag{
+border-radius: 10px 70px;
+width:100px;
+background-color: darksalmon;
+color:deeppink;
+margin-top:10px;
+}
+.pag:hover{
+background-color: fuchsia;
+color: ghostwhite;
+}
 .produto .img-produtos:hover {
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
@@ -965,8 +1026,15 @@ p {
     width: 80%;
     margin: 0 auto;
 }
-
+.pag {
+  border-radius: 10px 70px;
+  width: 100px;
+  background-color: darksalmon;
+  color: deeppink;
+  margin-top: 10px;
+}
 header {
+background-size: cover;
   grid-area: h;
   display: flex;
   width: 100%;
@@ -1042,7 +1110,7 @@ display:none;
 
 .navbar ul {
   height: 100px;
-  background-color:rgb(164 51 115);
+  background-color:rgb(164 ,51 ,115);
   /*left: 100px;*/
   width: 100%;
 
@@ -1079,7 +1147,13 @@ footer.rodape {
   .nav-links {
     width: 100%;
   }
-
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   .navbar ul {
     height: 115px;
     background-color: rgb(164 51 115);
@@ -1094,6 +1168,13 @@ footer.rodape {
     margin: 30px 30px;
 
   }
+  .pag {
+    border-radius: 10px 70px;
+    width: 100px;
+    background-color: darksalmon;
+    color: deeppink;
+    margin-top: 10px;
+}
   body {
     overflow-x: hidden;
   }
@@ -1103,7 +1184,13 @@ footer.rodape {
   .burger {
     display: block;
     background-color: rgb(164 51 115);
-    margin-right: 200px;
+    margin-right: 200px;}
+    .pag {
+      border-radius: 10px 70px;
+      width: 100px;
+      background-color: darksalmon;
+      color: deeppink;
+      margin-top: 10px;
   }
 
   footer.rodape {
@@ -1113,7 +1200,7 @@ footer.rodape {
     text-align: center;
   }
 
-  .footer.rodape {
+  footer.rodape {
     margin-left: 0;
   }
 
