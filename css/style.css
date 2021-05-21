@@ -39,7 +39,8 @@ li a:hover {
 
 header {
 
-padding-bottom: 40px;
+max-width:100%;
+  padding-bottom: 40px;
 left:150px;
   grid-area: h;
   display: flex;
@@ -51,8 +52,8 @@ left:150px;
 
 .container {
   position:center;
-  width:100%;
-  height:100%;
+ max-width:100%;
+  max-height:100%;
   padding: 0;
   grid-template-areas: "h h h"
                        "s s s"
@@ -878,11 +879,11 @@ Collection
 }
 
 .collection__box img.collection_01 {
-  width: 50%;
+  width: 100%;
 }
 
 .collection__box img.collection_02 {
-  width: 50%;
+  width: 100%;
 }
 
 .collection__content {
@@ -895,6 +896,7 @@ Collection
 
 .collection__content span {
   color: var(--black);
+  padding-left:20px;
 }
 
 .collection__content h1 {
@@ -1124,14 +1126,10 @@ display:none;
 }
 
 footer {
-  max-width: 100%;
-}
-
-footer.rodape {
   display: block;
-  width: 100%;
-  /* margin-bottom: 40px;*/
+  max-width: 100%;
   text-align: center;
+  overflow:clip;
 }
 
 .produto .img-produtos {
