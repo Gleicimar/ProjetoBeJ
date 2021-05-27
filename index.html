@@ -1,8 +1,16 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-<script type="text/javascript" src ="js/bioep.min.js"></script>
-<script type="text/javascript">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maquiagem,acessórios ,dicas de beleza">
+    <meta name="author"  content="Gleicimar R. Pereira">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src ="js/bioep.min.js"></script>
+    <script type="text/javascript">
     bioEp.init({
         html: '<div id="bio_ep_content">' +
         '<span></span>' +
@@ -19,141 +27,122 @@
         '.bio_btn {display: inline-block;justify-content:center; height:60px; margin: 18px 0 0 0; padding: 8px 25px 8px 25px; color: #fff; font-size: 19px; font-weight: 900; background-color: #ff4719; border: 1px solid #fff; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; border-radius: 100px; text-decoration: none;}',
         cookieExp: 0
     });
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <title> Mulher Bonita </title>
+    </script>
+    <title>Mulher bonita</title>
 </head>
-<div class="container">
+<body>
+<header>
     <div class="center">
-        <header>
-            <!--Logo-->
-            <img src="images/logo_mulher_bonita.svg" alt="logo">
+        <div class="logo"></div>
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a class="menu_button" href=""><i class="fa fa-fw fa-home"></i> Home</a></li>
-                    <li><a class="menu_button" href="produtos.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Produtos</a></li>
-                    <li><a class="menu_button" href=""><i class="fa fa-user-secret"></i>Quem somos </a></li>
-                    <li><a class="menu_button" href=""><i class="fa fa-phone"></i>Fale Conosco</a></li>
+                    <li><a class="menu_button" title="Home" href=""><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a class="menu_button" title="Produtos"  href="produtos.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Produtos</a></li>
+                    <li><a class="menu_button" title="Quem somos"  href=""><i class="fa fa-user-secret"></i>Quem somos </a></li>
+                    <li><a class="menu_button" title="Fale Conosco"  href=""><i class="fa fa-phone"></i>Fale Conosco</a></li>
                 </ul>
                 <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
-                </div>
-            </nav>
-                    <!--Menu-->
-            <!-- Inicio da tag Nav -->
-    <!--Menu final-->
-
-        </header>
-    </div>
-
-
-    <!--Botão Redes Sociais-->
-    <a class="instagram-link" href="https://www.instagram.com/mulherbonita.makeseacessorios/" target="_blank"><i
-            class="fa fa-instagram"></i></a>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5531975713009" target="_blank">
-        <i class="fa fa-whatsapp"></i></a>
-
-    <!--Botão final-->
-    <div class="center">
- <!-- Slider início!-->
- <div class="img-slider">
-    <div class="slide active">
-        <img src="images/colar.jpg" alt="">
-        <div class="info">
-            <h2>Colar e Pulseira</h2>
-            <p>Pra quem tem bom gosto e estilo,se sentir ainda mais Bonita</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/colar-e-pulseira.jpg" alt="">
-        <div class="info">
-            <h2>Slide 02</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/photo_2021-04-08_20-32-37.jpg" alt="">
-        <div class="info">
-            <h2>Slide 03</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/photo_2021-04-08_20-33-34.jpg">
-        <div class="info">
-            <h2>Slide 04</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/photo_2021-04-08_20-33-47.jpg" alt="">
-        <div class="info">
-            <h2>Slide 05</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-
-        <div class="btn"></div>
-    </div>
-</div>
-<!--Slider final-->
-    </div>
+                </div><!--burger-->
+            </nav><!--nav-->
+<div class="clear"></div>
+    </div><!--center-->
+</header>
+<section class="slider">
 <div class="center">
-    <main class="produtos-flex">
-        <section id="collection" class="section collection">
-            <div class="collection__container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
-                <div class="collection__box">
-                    <div class="img__container">
-                        <img class="collection_02" src="images/colar-e-pulseira.jpg" alt="">
-                    </div>
-                    <div class="collection__content">
-                        <div class="collection__data">
-                            <span>Novos modelos</span>
-                            <h1>Colares e Pulseira com bom gosto e qualidade</h1>
-                            <a href="#shop">Compre agora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="collection__box">
-                    <div class="img__container">
-                        <img class="collection_01" src="images/esponja.jpg" alt="">
-                    </div>
-                    <div class="collection__content">
-                        <div class="collection__data">
-                            <span>Essencial</span>
-                            <h1>Esponjas para retirar maquiagem</h1>
-                            <a href="#">Compre agora</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="img-slider">
+        <div class="slide active">
+            <img src="images/colar.jpg" alt="">
+            <div class="info">
+                <h2>Colar e Pulseira</h2>
+                <p>Pra quem tem bom gosto e estilo,se sentir ainda mais Bonita</p>
             </div>
-        </section>
-    </main>
-    <footer class="rodape">
-        &trade; Feito por &reg;
-    </footer>
+        </div>
+        <div class="slide">
+            <img src="images/colar-e-pulseira.jpg" alt="">
+            <div class="info">
+                <h2>Slide 02</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/photo_2021-04-08_20-32-37.jpg" alt="">
+            <div class="info">
+                <h2>Slide 03</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/photo_2021-04-08_20-33-34.jpg">
+            <div class="info">
+                <h2>Slide 04</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/photo_2021-04-08_20-33-47.jpg" alt="">
+            <div class="info">
+                <h2>Slide 05</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+    </div>
+        </div><!--center-->
+  </section>
+  <section id="collection" class="section collection">
+      <div class="center">
+                <div class="collection__container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="collection__box">
+                        <div class="img__container">
+                            <img class="collection_02" src="images/colar-e-pulseira.jpg" alt="">
+                        </div>
+                        <div class="collection__content">
+                            <div class="collection__data">
+                                <span>Novos modelos</span>
+                                <h1>Colares e Pulseira com bom gosto e qualidade</h1>
+                                <a href="#shop">Compre agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection__box">
+                        <div class="img__container">
+                            <img class="collection_01" src="images/esponja.jpg" alt="">
+                        </div>
+                        <div class="collection__content">
+                            <div class="collection__data">
+                                <span>Essencial</span>
+                                <h1>Esponjas para retirar maquiagem</h1>
+                                <a href="#">Compre agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      </div><!--center-->
+ <footer >
+        &copy; Feito por  Gleicimar
+  </footer>
+<!--Botão Redes Sociais-->
+<a class="instagram-link" href="https://www.instagram.com/mulherbonita.makeseacessorios/" target="_blank"><i
+    class="fa fa-instagram"></i></a>
+<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5531975713009" target="_blank">
+<i class="fa fa-whatsapp"></i></a>
+<!--Botão final-->
 
-</div>
 
-</div>
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
-
 </html>
