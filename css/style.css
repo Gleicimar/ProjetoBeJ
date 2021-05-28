@@ -580,7 +580,6 @@ margin-left: 0;
     position: absolute;
     right: 0px;
     height: 100px;
-    top: 3vh;
     /*Arrumando o menu hambuguer*/
     background-color: rgb(122, 40, 101);
     display: flex;
@@ -810,42 +809,8 @@ margin-top:0
     padding:0;
   }
 
-  .whatsapp-link {
-    position: fixed;
-    width: 35px;
-    height: 35px;
-    bottom: 5;
-    right: 25px;
-    background-color: 188, 41, 120;
-    color: 255, 153, 204;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 18px;
-    box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
-  }
-
-  .fa-whatsapp {
-    margin-top: 8px;
-  }
-
-  .instagram-link {
-    position: fixed;
-    width: 35px;
-    height: 35px;
-    bottom: 55;
-    right: 25px;
-    background-color: 188, 41, 120;
-    color: 255, 153, 204;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15px;
-    box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
-  }
-
-  .fa-instagram {
-    margin-top: 8px;
+  .rede{
+    display:none;
   }
 }
 
