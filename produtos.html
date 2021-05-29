@@ -1,270 +1,224 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<title>Novo Projeto</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  * {
+    margin: 0px;
+    /*Distancia entre os itens*/
+    padding: 0px;
+    box-sizing: border-box;
+  }
 
-    <title> Mulher Bonita </title>
+  nav {
+    display: flex;
+    /*Jogar os itens para o canto da página*/
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    /*Mudando a cor de fundo do menu*/
+    background-color: rgb(40, 113, 122);
+    /*Fonte do menu*/
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .logo {
+    /*Mudando a cor da fonte do nome*/
+    color: white;
+    /*Deixando o texto formatado*/
+    text-transform: uppercase;
+    /*Mudando o espaçamento das letras*/
+    letter-spacing: 5px;
+    /*Tamaho da letra*/
+    font-size: 20px;
+
+  }
+
+  .nav-links {
+    /*Ajustando o tamanho e posição dos itens*/
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+  }
+
+  .nav-links li {
+    /*Sumindo com os pontos que ficavam nos itens*/
+    list-style: none;
+
+
+  }
+
+  .nav-links a {
+    /*Mudando a cor dos itens*/
+    color: white;
+    /*Mudando o espaçamento das letras dos itens*/
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .burger {
+    /*Não deixando o menu hambuguer visivel */
+    display: none;
+    /*aparecendo a maozinha quando clica no menu hambuguer*/
+    cursor: pointer;
+  }
+
+  .burger div {
+    /*Ajeitando o menu Hambuguer*/
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /*Ajustando a altura*/
+  @media screen and (max-width:1024px) {
+    .nav-links {
+      width: 60%;
+    }
+  }
+
+  /*Ajustando a altura minima*/
+  @media screen and (max-width:768px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    /*ajustando os itens para se adequar a altura min.*/
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      /*Arrumando o menu hambuguer*/
+      background-color: rgb(40, 113, 122);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      /*Ajeitando a transição parar abrir o menu hambuguer*/
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+      opacity: 0;
+    }
+
+    .burger {
+      /*para aparecer o menu hambuguer quando a tela tiver pequena*/
+      display: block;
+    }
+  }
+
+  /*Quando se clica no menu hambuguer, consegue abrir os itens*/
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  /*Animações quando se clica no menu hamburguer*/
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /*Transformando o menu em X*/
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .nav-links.nav-active li {
+      opacity: 1;
+    }
+  }
+</style>
 </head>
-<div class="container">
-    <header>
-        <!--Logo-->
-        <img src="images/logo_mulher_bonita.svg" alt="logo">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a class="menu_button" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
-                <li><a class="menu_button" href="produtos.html"><i class="fa fa-shopping-bag"
-                            aria-hidden="true"></i>Produtos</a></li>
-                <li><a class="menu_button" href=""><i class="fa fa-user-secret"></i>Quem somos </a></li>
-                <li><a class="menu_button" href=""><i class="fa fa-phone"></i>Fale Conosco</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <!--Menu-->
-        <!-- Inicio da tag Nav -->
 
-    </header>
 
-    <!--Menu final-->
-    <!--Botão Redes Sociais-->
-    <a class="instagram-link" href="https://www.instagram.com/mulherbonita.makeseacessorios/" target="_blank"><i
-            class="fa fa-instagram"></i></a>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone= target=" _blank">
-        <i class="fa fa-whatsapp"></i></a>
+<!--Menu responsivo-->
 
-    <!--Botão final-->
-
-    <!--Slider início!
-<div class="img-slider">
-    <div class="slide active">
-        <img src="images/colar.jpg" alt="">
-        <div class="info">
-            <h2>Slide 01</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
+<body>
+  <nav>
+    <div class="logo">
+      <h4>Teste</h4>
     </div>
-    <div class="slide">
-        <img src="images/colar-e-pulseira.jpg" alt="">
-        <div class="info">
-            <h2>Slide 02</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/photo_2021-04-08_20-32-37.jpg" alt="">
-        <div class="info">
-            <h2>Slide 03</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/photo_2021-04-08_20-33-34.jpg">
-        <div class="info">
-            <h2>Slide 04</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="slide">
-        <img src="images/photo_2021-04-08_20-33-47.jpg" alt="">
-        <div class="info">
-            <h2>Slide 05</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-    </div>
-</div>
-Slider final-->
-    <!--Galeria de produtos-->
-    <main class="produtos">
-        <ul class="produto">
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar-e-pulseira.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag"  href="">Comprar</button></p>
-            </li>
-            <li>
-                <img src="images/colar.jpg" alt="" class="img-produtos">
-                <p>Colar sinonimo de beleza e qualidade por 30R$ <br> <button class="pag" href="">Comprar</button></p>
-            </li>
 
-        </ul>
-    </main>
-    <footer class="rodape">
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Missão</a></li>
+      <li><a href="#">Portifólio</a></li>
+      <li><a href="#">Contatos</a></li>
+    </ul>
+    <!--Menu hambuguer-->
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <script src="javs/app.js"></script>
 
-        &trade; Feito por &reg;
-    </footer>
-
-</div>
-<script src="js/script.js"></script>
 </body>
+
+<script>
+  const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    //Fazendo aparecer os itens
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    //Fazendo o clique do menu funcionar
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+
+      //Animações links
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = '';
+        } else {
+          link.style.animation = `navlinkFade 0.5s ease forwards ${index/7+1.5}s`
+
+        }
+      });
+      //Transformando em X
+      burger.classList.toggle('toggle');
+
+
+    });
+
+
+  }
+
+  navSlide();
+</script>
 
 </html>

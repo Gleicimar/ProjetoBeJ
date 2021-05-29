@@ -523,6 +523,10 @@ max-width: 1280px;
 }
 /*Media  Queries*/
 @media screen and (max-width: 768px) {
+.center{
+  max-width:100%;
+  overflow: hidden;
+}
   .logo {
     width: 100px;
     height: 75px;
@@ -579,6 +583,8 @@ margin-left: 0;
   .nav-links {
     position: absolute;
     right: 0px;
+    max-width:100%;
+    overflow:hidden;
     height: 100px;
     /*Arrumando o menu hambuguer*/
     background-color: rgb(122, 40, 101);
@@ -689,14 +695,31 @@ margin-left: 0;
 
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 800px) {
+  body{
+overflow-x: hidden;
+  }
+  .img-slider .slide .info {
+    padding: 40px 25px;
+}
+  .img-slider .slide img {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+     padding-top: 30px;
+}
+  .burger {
+    display: block;
+    background-color: rgb(255, 153, 204);
+    float: right;
+}
 .menu_button{
 font-size:15px;
 margin-top:0
 }
   .navbar ul {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 0;
     width: calc(100% - 150px);
     height: 100px;
     float: right;
@@ -729,6 +752,10 @@ margin-top:0
 
   .collection__data h1 {
     font-size: 2rem;
+  }
+  footer{
+    width:100%;
+    max-width: 1280px;
   }
 }
 
